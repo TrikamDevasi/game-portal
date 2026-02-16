@@ -70,7 +70,7 @@ body {
 .main-title {
     font-size: 4rem;
     color: white;
-    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
     margin-bottom: 15px;
     animation: bounce 1s ease-out;
 }
