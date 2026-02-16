@@ -395,3 +395,18 @@ body {
     background: #764ba2;
     color: white;
 }
+
+.badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    z-index: 2;
+}
+.badge.popular { background: linear-gradient(135deg, #ff9966, #ff5e62); }
+.badge.new { background: linear-gradient(135deg, #00b09b, #96c93d); }
