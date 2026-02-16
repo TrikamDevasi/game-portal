@@ -107,6 +107,7 @@ body {
 
 /* Game Cards */
 .game-card {
+    border: 1px solid rgba(255,255,255,0.6);
     background: white;
     border-radius: 20px;
     padding: 35px;
