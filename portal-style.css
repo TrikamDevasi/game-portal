@@ -414,3 +414,7 @@ body {
 }
 .badge.popular { background: linear-gradient(135deg, #ff9966, #ff5e62); }
 .badge.new { background: linear-gradient(135deg, #00b09b, #96c93d); }
+
+.game-card:hover .game-icon {
+    transform: rotate(10deg) scale(1.1);
+}
