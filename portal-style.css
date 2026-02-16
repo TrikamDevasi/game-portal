@@ -426,3 +426,10 @@ body {
     border-radius: 20px;
     margin-top: 40px;
 }
+
+.stat-number {
+    background: linear-gradient(to bottom, #fff, #a5b4fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none;
+}
