@@ -173,6 +173,7 @@ body {
 }
 
 .game-icon {
+    transition: transform 0.3s ease;
     font-size: 4rem;
     text-align: center;
     margin-bottom: 20px;
