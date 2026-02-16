@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
             btn.style.position = 'relative';
             btn.appendChild(ripple);
             
-            setTimeout(() => ripple.remove(), 600);
+            ripple.addEventListener("animationend", () => ripple.remove());
         });
     });
 
