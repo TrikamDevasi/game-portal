@@ -470,3 +470,7 @@ body {
 .play-btn:active {
     transform: scale(0.98);
 }
+
+.game-icon {
+    text-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
