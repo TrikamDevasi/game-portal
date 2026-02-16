@@ -466,3 +466,7 @@ body {
     background: rgba(0,0,0,0.3);
     transition: background 0.3s ease;
 }
+
+.play-btn:active {
+    transform: scale(0.98);
+}
