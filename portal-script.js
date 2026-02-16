@@ -1,4 +1,22 @@
-// Add interactive effects and animations
+
+    // Scroll to Top Button
+    const scrollTopBtn = document.createElement('button');
+    scrollTopBtn.innerHTML = '⬆️';
+    scrollTopBtn.className = 'scroll-top-btn';
+    document.body.appendChild(scrollTopBtn);
+    
+    scrollTopBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            scrollTopBtn.classList.add('visible');
+        } else {
+            scrollTopBtn.classList.remove('visible');
+        }
+    });
+\n// Add interactive effects and animations
 
 document.addEventListener('DOMContentLoaded', () => {
     // Add hover sound effect (optional - can be enabled later)
