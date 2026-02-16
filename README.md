@@ -199,3 +199,4 @@ Free to use and modify!
 ## 🎉 Enjoy!
 
 Have fun playing all the games from one central hub! 🎮✨
+\n## UI Polish Updates\n- Enhanced Visuals\n- Mobile Responsive Tweaks\n- Performance Improvements
