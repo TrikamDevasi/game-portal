@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Console welcome message
     console.log('%c🎮 Game Hub Loaded', 'background: #667eea; color: white; padding: 5px 10px; border-radius: 3px;');
-    console.log('%cEnjoy playing our collection of multiplayer games!', 'font-size: 14px; color: #764ba2;');
+    
 });
 
 // Add CSS for ripple animation
