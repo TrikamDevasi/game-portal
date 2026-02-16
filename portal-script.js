@@ -16,7 +16,14 @@
             scrollTopBtn.classList.remove('visible');
         }
     });
-\n// Add interactive effects and animations
+\n// Add interactive effects\n
+    // Telemetry simulation
+    document.querySelectorAll('.game-card').forEach(card => {
+        card.addEventListener('click', () => {
+            console.log('Card interaction: ' + card.querySelector('.game-title').textContent);
+        });
+    });
+ and animations
 
 document.addEventListener('DOMContentLoaded', () => {
     // Add hover sound effect (optional - can be enabled later)
