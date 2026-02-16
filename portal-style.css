@@ -389,3 +389,8 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(#5a6fd6, #674291);
 }
+
+::selection {
+    background: #764ba2;
+    color: white;
+}
