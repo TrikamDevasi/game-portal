@@ -381,3 +381,7 @@ body {
     background: linear-gradient(#667eea, #764ba2);
     border-radius: 6px;
 }
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(#5a6fd6, #674291);
+}
