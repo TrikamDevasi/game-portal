@@ -4,7 +4,7 @@
     scrollTopBtn.innerHTML = '⬆️';
     scrollTopBtn.className = 'scroll-top-btn';
     document.body.appendChild(scrollTopBtn);
-    
+
     scrollTopBtn.addEventListener('click', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
@@ -28,12 +28,12 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Add hover sound effect (optional - can be enabled later)
     const gameCards = document.querySelectorAll('.game-card');
-    
+
     gameCards.forEach(card => {
         card.addEventListener('mouseenter', () => {
             card.style.transform = 'translateY(-10px) scale(1.02)';
         });
-        
+
         card.addEventListener('mouseleave', () => {
             card.style.transform = 'translateY(0) scale(1)';
         });
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Add click animation to play buttons
     const playButtons = document.querySelectorAll('.play-btn');
-    
+
     playButtons.forEach(btn => {
         btn.addEventListener('click', (e) => {
             // Create ripple effect
@@ -52,14 +52,14 @@ document.addEventListener('DOMContentLoaded', () => {
             ripple.style.width = '20px';
             ripple.style.height = '20px';
             ripple.style.animation = 'ripple 0.6s ease-out';
-            
+
             const rect = btn.getBoundingClientRect();
             ripple.style.left = (e.clientX - rect.left - 10) + 'px';
             ripple.style.top = (e.clientY - rect.top - 10) + 'px';
-            
+
             btn.style.position = 'relative';
             btn.appendChild(ripple);
-            
+
             ripple.addEventListener("animationend", () => ripple.remove());
         });
     });
@@ -69,19 +69,19 @@ document.addEventListener('DOMContentLoaded', () => {
         const cards = document.querySelectorAll('.game-card');
         const x = e.clientX / window.innerWidth;
         const y = e.clientY / window.innerHeight;
-        
+
         cards.forEach((card, index) => {
             const speed = (index + 1) * 2;
             const xOffset = (x - 0.5) * speed;
             const yOffset = (y - 0.5) * speed;
-            
+
             card.style.transform = `translateX(${xOffset}px) translateY(${yOffset}px)`;
         });
     });
 
     // Add dynamic stats counter animation
     const statNumbers = document.querySelectorAll('.stat-number');
-    
+
     const animateStats = () => {
         statNumbers.forEach((stat, index) => {
             if (index === 0) {
@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const cards = Array.from(document.querySelectorAll('.game-card'));
         const currentFocus = document.activeElement;
         const currentIndex = cards.findIndex(card => card.contains(currentFocus));
-        
+
         if (e.key === 'ArrowRight' && currentIndex < cards.length - 1) {
             cards[currentIndex + 1].querySelector('.play-btn').focus();
         } else if (e.key === 'ArrowLeft' && currentIndex > 0) {
@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.addEventListener('click', function() {
             this.style.opacity = '0.7';
             this.innerHTML = '<span>Loading...</span>';
-            
+
             // Reset after 2 seconds (in case link doesn't open)
             setTimeout(() => {
                 this.style.opacity = '1';
@@ -142,7 +142,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Console welcome message
     console.log('%c🎮 Game Hub Loaded', 'background: #667eea; color: white; padding: 5px 10px; border-radius: 3px;');
-    
+
 });
 
 // Add CSS for ripple animation
