@@ -187,7 +187,7 @@ body {
     50% { transform: translateY(-6px); }
 }
 
-.game-title {
+.game-title {\n    letter-spacing: -0.5px;
     font-size: 2rem;
     color: #1f2937;
     margin-bottom: 15px;
